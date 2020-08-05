@@ -1,12 +1,12 @@
 <?php
 
-namespace vasadibt\cron\models;
+namespace andreag\cron\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 
 /**
- * CronJobSearch represents the model behind the search form of `\vasadibt\cron\models\CronJob`.
+ * CronJobSearch represents the model behind the search form of `\andreag\cron\models\CronJob`.
  */
 class CronJobSearch extends CronJob
 {

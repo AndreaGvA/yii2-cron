@@ -6,10 +6,10 @@
  * Time: 18:12
  */
 
-namespace vasadibt\cron\commands;
+namespace andreag\cron\commands;
 
 use Cron\CronExpression;
-use vasadibt\cron\models\CronJob;
+use andreag\cron\models\CronJob;
 use yii\console\Controller;
 use yii\console\widgets\Table;
 use yii\helpers\ArrayHelper;

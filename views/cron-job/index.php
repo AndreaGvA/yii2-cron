@@ -1,12 +1,12 @@
 <?php
 
-use vasadibt\cron\models\CronJob;
-use vasadibt\cron\Module;
+use andreag\cron\models\CronJob;
+use andreag\cron\Module;
 use kartik\grid\GridView;
 use yii\helpers\Html;
 
 /** @var yii\web\View $this */
-/** @var vasadibt\cron\models\CronJobSearch $searchModel */
+/** @var andreag\cron\models\CronJobSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
 $this->title = Yii::t('vbt-cron', 'Cron Jobs');

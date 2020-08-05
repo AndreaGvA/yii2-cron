@@ -3,11 +3,11 @@
  * Created by Model Generator.
  */
 
-namespace vasadibt\cron\models;
+namespace andreag\cron\models;
 
 use common\helpers\FileHelper;
 use Symfony\Component\Process\Process;
-use vasadibt\cron\Module;
+use andreag\cron\Module;
 use Yii;
 use yii\db\ActiveQuery;
 use yii\db\ActiveQueryInterface;

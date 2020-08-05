@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist vasadibt/yii2-cron "*"
+php composer.phar require --prefer-dist andreag/yii2-cron "*"
 ```
 
 or add
 
 ```
-"vasadibt/yii2-cron": "*"
+"andreag/yii2-cron": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -27,7 +27,7 @@ to the require section of your `composer.json` file.
 Run the following command in Terminal for database migration:
 
 ```
-yii migrate/up --migrationPath=@vasadibt/cron/migrations
+yii migrate/up --migrationPath=@andreag/cron/migrations
 ```
 
 Or use the [namespaced migration](http://www.yiiframework.com/doc-2.0/guide-db-migrations.html#namespaced-migrations) (requires at least Yii 2.0.10):
@@ -38,7 +38,7 @@ Or use the [namespaced migration](http://www.yiiframework.com/doc-2.0/guide-db-m
     'migrate' => [
         'class' => 'yii\console\controllers\MigrateController',
         'migrationPath' => [
-            '@vasadibt/cron/migrations',
+            '@andreag/cron/migrations',
         ],
     ],
 ],
@@ -58,7 +58,7 @@ Simple example:
 ```php
 'modules' => [
     'cron' => [
-        'class' => 'vasadibt\cron\Module',
+        'class' => 'andreag\cron\Module',
     ],
 ],
 ```
@@ -72,7 +72,7 @@ Simple example:
 ```php
 'modules' => [
     'cron' => [
-        'class' => 'vasadibt\cron\Module',
+        'class' => 'andreag\cron\Module',
     ],
 ],
 ```
