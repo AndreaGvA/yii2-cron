@@ -170,10 +170,8 @@ class CronJob extends ActiveRecord
     {
         $module = Module::getInstance();
 
-        return strtr('{php} {yii} {command}', [
-            '{php}' => $module->phpBinary,
-            '{yii}' => $module->yiiFile,
-            '{command}' => $command,
-        ]);
+        return [
+            $command,
+        ];
     }
 }
