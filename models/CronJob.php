@@ -145,7 +145,7 @@ class CronJob extends ActiveRecord
      */
     public function runQuick()
     {
-        $process = $this->buildProcess('cron/job/run ' . $this->id);
+        $process = $this->buildProcess('/usr/bin/php /opt/intranet_dev/yii cron/job/run ' . $this->id);
         $process->start();
     }
 
@@ -157,7 +157,7 @@ class CronJob extends ActiveRecord
     public function buildProcess($command, $timeout = 60)
     {
         $command = $this->buildCommand($command);
-        print_r($command);
+        //print_r($command);
         $process = new Process($command, null, null, null, $timeout);
         return $process;
     }
