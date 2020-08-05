@@ -157,6 +157,7 @@ class CronJob extends ActiveRecord
     public function buildProcess($command, $timeout = 60)
     {
         $command = $this->buildCommand($command);
+        print_r($command);
         $process = new Process($command, null, null, null, $timeout);
         return $process;
     }
@@ -171,7 +172,9 @@ class CronJob extends ActiveRecord
         $module = Module::getInstance();
 
         return [
-            $command,
+            "/usr/bin/php",
+            "/opt/intranet_dev/yii",
+            "test"
         ];
     }
 }
