@@ -171,10 +171,6 @@ class CronJob extends ActiveRecord
     {
         $module = Module::getInstance();
 
-        return [
-            "/usr/bin/php",
-            "/opt/intranet_dev/yii",
-            "test"
-        ];
+        return explode(" ", $command);
     }
 }
