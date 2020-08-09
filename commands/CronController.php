@@ -58,7 +58,7 @@ class CronController extends Controller
     {
         foreach (CronJob::findRunnable() as $job) {
             if (CronExpression::factory($job->schedule)->isDue()) {
-                $this->run('/cron/job/run-quick', [$job->id]);
+                $this->run('/cron/job/run', [$job->id]);
             }
         }
     }
